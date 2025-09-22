@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/ico" href="/img/logo.ico">
+    <!--CSS htmlwide-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body>
+    <header>
+        <!--Nav bar-->   
+        <nav>
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo" id="logo-img">
+                <h1>Web Dev 1</h1>
+            </div>
+            <div class="hamburgerMenu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              
+              <script>
+                function myFunction(x) {
+                  x.classList.toggle("change");
+                  document.querySelector(".nav-links ul").classList.toggle("show");
+                }
+              </script>
+              </script>
+            <div class="nav-links">
+            <ul>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#example">Example</a></li>
+            </ul>
+        </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="me">
+            <figure>
+                <img src="./img/IMG_3065.jpeg" id="imgA" id="Picture of Andrew">
+                <figcaption>
+                    Andrew Nashed
+                </figcaption>
+            </figure>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <iframe src="https://about-me-kindleisbest.andrewnashed.org" title="Web Dev Class Final Project" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
