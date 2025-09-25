@@ -74,7 +74,7 @@ header a{
 }
 
 header a:hover, header a:focus{
-    filter:invert(100%) ;
+    filter:invert(100%);
     text-decoration: underline; 
 }
 
