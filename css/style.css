@@ -57,6 +57,30 @@ p{
     background-color: rgb(0, 140, 255);
     border-radius: 10px;
 }
+h3{
+    text-align: center;
+}
+footer { /*creates the footer that we all know and love by creating the thick black line at the bottem and added the copyrights and socials*/
+    border: none;
+    position: relative;
+    background-color: black;
+    color:white;
+    text-decoration-color: #ffff;
+    text-align:center;
+}
+footer h4 { /*add reasonable space below text for the buttons instead of leaving it up to the browsers to decide*/
+    margin:3px;
+}
+[type="button"]{ /*creates the buttons in the footer for the socials*/
+    padding: 1px;
+    background-color: white;
+    text-decoration: none;
+    align-self: center;
+    justify-self:center;
+    color: black;
+    border-radius: 3px;
+    margin: 2px;
+}
 @media (min-width: 60em){ /*For smaller screens*/ 
     #imgA {
         padding: 30px;
