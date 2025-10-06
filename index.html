@@ -116,7 +116,7 @@
             </section>
         </section>
         <div id="survey">
-        <form name="contact" method="POST" data-netlify="true" id="form">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="form">
             <label for="formTitle"><h3>Survey</h3></label>
             <label for="name">Name (Required): </label>
             <input id="name" type="name" name="name" placeholder="Name" class="inputs" required/>
@@ -142,6 +142,8 @@
 
             <label for="message">Message (Required): </label>
             <textarea id="message" name="message" placeholder="Message" class="inputs" required></textarea>
+
+            <div data-netlify-recaptcha="true"  data-sitekey="6LcfjeArAAAAAJUGR9pK8D2TzfNsv5QFptzqA8tU"></div>
 
             <br>
             <button type="submit" class="btn" id="Submit">Submit!</button>
