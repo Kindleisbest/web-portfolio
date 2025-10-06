@@ -39,12 +39,22 @@ header h1{
 
 
 /* logo */
-.logo{
+.logo img{
     display: flex;
     width: 100px;
     height: 100px;
     justify-content: center;
     margin: auto ;
+    padding-top: 5px;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: auto;
 }
 
 

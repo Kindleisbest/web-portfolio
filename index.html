@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="A personal portfolio showcasing my projects, skills, and accomplishments.">
+    <meta property="og:image" content="./img/image.png">
+    <meta property="og:url" content="https://andrewnashed.org">
+    <meta property="og:type" content="portfolio"> <!--pulled off of google AI Overview-->
+
     <meta name="description" content="A personal portfolio showcasing my projects, skills, and accomplishments."> <!--Accurate but I used AI because I was unfamiliar with this tag so the description is accurate just AI Generated-->
+
+
+
     <link rel="icon" type="image/ico" href="/img/logo.ico">
     <!--CSS htmlwide-->
     <link rel="stylesheet" href="./css/style.css">
@@ -16,6 +26,7 @@
         <nav>
             <div class="logo">
                 <img src="/img/logo.svg" alt="logo" id="logo-img">
+                
                 <h1>Portfolio</h1>
             </div>
             <div class="hamburgerMenu" onclick="myFunction(this)">
@@ -33,10 +44,10 @@
             
             <div class="nav-links">
             <ul>
-                <li><a href="#Projects">Projects</a></li>
                 <li><a href="mailto:Andrew@andrewnashed.org">Email</a></li>
                 <li><a href="#aboutMe">About Andrew</a></li>
-                <li><a href="#Projects">Example</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#survey">Contact</a></li>
             </ul>
         </div>
         </nav>
@@ -52,6 +63,12 @@
                     Andrew Nashed
                 </figcaption>
             </figure>
+        </section>
+             <section id="aboutMe">
+            <h3>Who am I?</h3>
+            <div id="abt">
+            <p>Hi, My name is Andew! Little about me is that I started exploring tech when I was 13. I am cuurently at Raritan Valley Community College to study Information Systems and Technology (ISIT). Im thinking of going into a career of either Cyber Security, Network Administrater, or Web Developer. My more recent "project" is that I am working on my laptop upgrading the ram and storage, swapped out the casing, replaced the battery, and replaced the power adapter that somehow had holes. For context my laptop is a HP 14 dk-1000. It used to be my primary laptop until it no longer met my standards as they where highered in College. I still have it for learning so I can figure out more about computers what ticked where and use it to further my career. I also try to learn code to see what I can do with it. Languages I know are html, css, and a fair amount of python. What languages I am trying to learn now is Rust and Javascript. Relevant classes that I've taken at RV to my career are Essencial Networking, Web Dev 1, and currently taking Interactive Multimedia. As a hobby I generally play video games like Roblox and Minecraft and keep up with tech news like WWDC, Google I/O, and etc. I also like beta testing iOS software. I've been a beta tester since 2020. I run a X (formally known as Twitter) account @TechTalksPage that talks about Technology. My favorite game is Roblox because there are a lot of games on there but I am exploring other games like Jedi Survivor that im currently trying to figure out the gameplay to. I do spend a fair ammount of time on social media. I currently use TikTok, Instagram, and X. I do have Facebook but only to use Messanger to talk to family.</p>
+            </div>
         </section>
         <section id="Projects">
             <h2>Projects</h2>
@@ -98,14 +115,53 @@
                     </a>
             </section>
         </section>
-        <section id="aboutMe">
-            
-        </section>
+        <div id="survey">
+        <form name="contact" method="POST" data-netlify="true" id="form">
+            <label for="formTitle"><h3>Survey</h3></label>
+            <label for="name">Name (Required): </label>
+            <input id="name" type="name" name="name" placeholder="Name" class="inputs" required/>
+            <br>
+            <label for="email">Email (Required): </label>
+            <input id="email" type="email" name="email" placeholder="Email" class="inputs" autocomplete="email" required/>
+            <br>
+
+            <label for="phone">Phone Number: </label>
+            <input id="phone" type="tel" name="phone" placeholder="Number" class="inputs" autocomplete="tel-local" required/>
+            <br>
+
+            <label for="perm">Would you like a contact back? (required):</label>
+            <select name="Would you like a contact back?" id="perm" class="inputs" autocomplete="name" required>
+            <optgroup label="Please select one">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </optgroup>
+
+            </select>
+
+            <br>
+
+            <label for="message">Message (Required): </label>
+            <textarea id="message" name="message" placeholder="Message" class="inputs" required></textarea>
+
+            <br>
+            <button type="submit" class="btn" id="Submit">Submit!</button>
+        </form>
+    </div>
+    <br>
+    <div id="contact">
+        <h3>Contact</h3>
+        <p>The forms at the moment has a limit. So for best chances to reach me please feel free to email me. Otherwise thank you for filling out the contact form!</p>
+        <a href="mailto:andrew@andrewnashed.org">
+            <button class="btn" id="btn">Email Me!</button>
+            </a>
+    </div>
     </main>
     <footer> 
         <h4>&copy; 2025 Andrew Nashed. All rights reserved.</h4>
         <a href="https://www.x.com/techtalkspage" target="_blank" type="button">𝕏</a>
         <a href="https://github.com/Kindleisbest?tab=repositories" target="_blank" type="button">Github</a>
+        <a href="https://www.roblox.com/share/g/7995182" target="_blank" type="button">Roblox Group</a>
+        
         
     </footer>
 

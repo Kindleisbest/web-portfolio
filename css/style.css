@@ -1,11 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(0, 153,255);
 }
 #me{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     justify-self: center;
     }
 
 #imgA {
+    display: block;
     padding: 30px;
     background-color: #008ff6;
     border-radius: 70px;
@@ -13,10 +20,20 @@ body{
     max-width: 100%;
     padding-bottom: 30px;
     margin-left: auto;
-    
+    margin-right: auto;
+    margin-bottom: 10px;
+    justify-items: center;
+ }
+ #contact{
+    justify-self: center;
+ }
+ #email{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
-    justify-self: inherit;
- 
  }
  #profileDiv {
     align-self: center;
@@ -34,19 +51,35 @@ body{
         text-align: center;
         font-weight: bolder;
     }
-
-.btn {
+#Submit{
+    justify-self: center;
+}
+.btn, a.btn{
     padding: 10px;
     width: 100px;
     height: 40px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
     background-color: rgb(0, 158, 255);
     border-radius: 10px;
+    justify-self: center;
 }
-.btn:hover{
+.btn:hover, a.btn:hover{
     cursor:pointer;
     filter:invert(100%);
-    text-decoration: underline;
+    text-decoration: none;
+}
+.inputs{
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 150px;
+    max-width: 300px;
+    justify-self: center;
+}
+label{
+    font-weight: bolder;
+    text-align: center;
 }
 p{
     margin-left: 10%;
@@ -56,6 +89,7 @@ p{
     padding: 7.5px;
     background-color: rgb(0, 140, 255);
     border-radius: 10px;
+
 }
 h3{
     text-align: center;
@@ -81,7 +115,32 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     border-radius: 3px;
     margin: 2px;
 }
-@media (min-width: 60em){ /*For smaller screens*/ 
+#survey form /*Creates the style for the contact form*/{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(0,140,255);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    min-width: 300px;
+    width:100%;
+    max-width:500px;
+    margin-bottom: 0px;
+    margin-top: 10px;   
+}
+#contact{
+    justify-self: center;
+    text-align: center;
+    padding: 10 px;
+    border-radius: 10px;
+    background-color: rgb(0,140,255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 960px){ /*For smaller screens*/ 
     #imgA {
         padding: 30px;
         background-color: #008ff6;
@@ -101,9 +160,24 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
         font-weight: bolder;
         font-size: large;
     }
+    #abt{
+    height: 230px;
+    width:700px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(0, 140, 255);
+    height: 230px;
+    overflow:scroll;
+    border-radius: 10px;
+    max-width: fit-content;
+}
 }
 
-@media (min-width: 1200px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
+
+
+    
+
+@media (min-width: 961px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
 
     
     #imgA {
@@ -114,6 +188,7 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     max-width: 100%;
     padding-bottom: 30px;
     margin-left: auto;
+
     
     }
     figcaption{
@@ -124,9 +199,47 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
         font-weight: bolder;
         font-size: larger;
     }
-    p{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-}
+  
 
+
+    #abt{
+        position: relative;
+        width:700px;
+        padding: 20px;
+        margin: auto;
+        /* background-color: rgb(0, 140, 255); */
+        height: 230px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: rgb(0, 140, 255);
+        border: rgb(0, 0, 0) solid 2px;
+    }
+    #abt::after{
+        content: ""; /* Creates the pseudo-element */
+        position: absolute; /* Position it absolutely within #abt */
+        left: 0; 
+        right: 0;
+        bottom: 0;
+        height: 60px; /* Adjust for desired blur size */
+        pointer-events: none; /* Allow clicks to pass through */
+        background: linear-gradient(to bottom, rgba(0,140,255, 0.9) 40%,rgba(0,140,255, 0.9) 80%, rgba(0,140,255,1) 100%); 
+        border-radius: inherit;
+        opacity: 1;
+    }
+    #abt:hover{
+        position: fixed;         /* take it out of normal flow */
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;            /* full screen width */
+        height: 95%;           /* full screen height */
+        max-height: 80%;
+        overflow: auto;          /* allow scrolling if text is long */
+        padding: 2rem;           /* including this line past 8 is AI w/ modifications due to my knowledge gap*/
+        background:rgb(0, 140, 255) ;
+        /* background-color: rgb(0, 140, 255); */
+    }
+
+}
