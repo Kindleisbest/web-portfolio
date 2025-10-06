@@ -142,7 +142,7 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 .captcha{
     display: block;
     justify-self: center;
-    align-self: center;
+    margin: auto;
 }
 
 @media (max-width: 960px){ /*For smaller screens*/ 
