@@ -143,6 +143,8 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     display: block;
     justify-self: center;
     margin: auto;
+    cursor: pointer;
+    align-self: center;
 }
 
 @media (max-width: 960px){ /*For smaller screens*/ 
