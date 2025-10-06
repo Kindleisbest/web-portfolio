@@ -139,9 +139,8 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.captcha{
+.rc-anchor-alert{
     display: block;
-    width: 304px;
     justify-self: center;
     margin-left: auto;
     margin-right: auto;
