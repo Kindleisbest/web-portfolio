@@ -143,6 +143,9 @@
             <label for="message">Message (Required): </label>
             <textarea id="message" name="message" placeholder="Message" class="inputs" required></textarea>
             <br>
+            <label for="file-upload">Choose a file:</label>
+            <input type="file" id="file-upload" name="uploaded_file" accept=".jpg,.png,.pdf">
+            <br>
             <label for="captcha">If the page refreshes instead of a confirmation page the captcha failed and the form did not submit</label>
             <div data-netlify-recaptcha="true"  id="captcha"></div>
 
