@@ -147,12 +147,19 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     cursor: pointer;
     align-self: center;
 }
-#file-upload{
-    justify-self: center;
+.project-img{
+    width: 80%;
+    max-width: 600px;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    justify-self: center;
 }
+
 
 @media (max-width: 960px){ /*For smaller screens*/ 
     #imgA {
@@ -185,6 +192,9 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     border-radius: 10px;
     max-width: fit-content;
 }
+.overlay-text {
+    opacity: 0.000;
+}
 }
 
 
@@ -195,13 +205,13 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 
     
     #imgA {
-    padding: 30px;
-    background-color: #008ff6;
-    border-radius: 100px;
-    width: 300px;
-    max-width: 100%;
-    padding-bottom: 30px;
-    margin-left: auto;
+        padding: 30px;
+        background-color: #008ff6;
+        border-radius: 100px;
+        width: 300px;
+        max-width: 100%;
+        padding-bottom: 30px;
+        margin-left: auto;
 
     
     }
@@ -239,6 +249,9 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
         background: linear-gradient(to bottom, rgba(0,140,255, 0.9) 40%,rgba(0,140,255, 0.9) 80%, rgba(0,140,255,1) 100%); 
         border-radius: inherit;
         opacity: 1;
+        .overlay-text {
+    opacity: 1.000;
+}
     }
     #abt:hover{
         position: fixed;         /* take it out of normal flow */
@@ -254,6 +267,36 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
         padding: 2rem;           /* including this line past 8 is AI w/ modifications due to my knowledge gap*/
         background:rgb(0, 140, 255) ;
         /* background-color: rgb(0, 140, 255); */
+        display: flex; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+
+        
     }
+    .overlay-text {
+        position: absolute;
+        bottom: 12px; /* lift a bit from the edge */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;                 /* above ::after */
+        pointer-events: none;       /* don't block clicks */
+        color: #fff;                /* dark text on light blur */
+        font-weight: 700;
+        padding: 6px 10px;
+        border-radius: 6px;
+        background: rgba(255,255,255,0); /* optional background */
+        transition: opacity 0.25s ease;
+        opacity: 1;
+}
+
+/* when the card expands on hover, hide the blur and text */
+#abt:hover::after {
+  opacity: 0;
+}
+#abt:hover .overlay-text {
+  opacity: 0;
+}
 
 }
