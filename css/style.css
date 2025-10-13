@@ -198,8 +198,11 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 }
 
 
-
-    
+/* 
+@keyframes abt:hover {
+            from { transform: scale(.95); opacity: 1; }
+            to   { transform: scale(1); opacity: 1; }
+        }  */
 
 @media (min-width: 961px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
 
@@ -229,10 +232,11 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     #abt{
         position: relative;
         width:700px;
+        height: 230px;
         padding: 20px;
         margin: auto;
         /* background-color: rgb(0, 140, 255); */
-        height: 230px;
+        
         overflow: hidden;
         border-radius: 10px;
         background-color: rgb(0, 140, 255);
@@ -254,7 +258,7 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 }
     }
     #abt:hover{
-        position: fixed;         /* take it out of normal flow */
+        position: fixed;
         top: 20px;
         left: 0;
         right: 0;
@@ -271,9 +275,35 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
         text-align: center;
         justify-content: center;
         align-items: center;
-
-
-        
+    }
+    
+    #abt.expanded{
+        position: fixed;         /* take it out of normal flow */
+        transform: scale(1.12);
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;            /* full screen width */
+        height: 95%;           /* full screen height */
+        max-height: 80%;
+        overflow: auto;          /* allow scrolling if text is long */
+        padding: 2rem;           /* including this line past 8 is AI w/ modifications due to my knowledge gap*/
+        background:rgb(0, 140, 255) ;
+        /* background-color: rgb(0, 140, 255); */
+        display: flex; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #abt.expanded.enter {
+        transform: translate(-50%, -50%) scale(0.86);
+        opacity: 0;
+}
+    #abt.expanded.enter-active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
     }
     .overlay-text {
         position: absolute;
