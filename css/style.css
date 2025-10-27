@@ -106,10 +106,14 @@ footer { /*creates the footer that we all know and love by creating the thick bl
     color:white;
     text-decoration-color: #ffff;
     text-align:center;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 footer h4 { /*add reasonable space below text for the buttons instead of leaving it up to the browsers to decide*/
-    margin:3px;
+    margin:5px;
+    margin-top: 10px;
 }
+
 [type="button"]{ /*creates the buttons in the footer for the socials*/
     padding: 1px;
     background-color: white;
@@ -118,7 +122,9 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     justify-self:center;
     color: black;
     border-radius: 3px;
-    margin: 2px;
+    margin: 5px;
+
+    
 }
 #survey form /*Creates the style for the contact form*/{
     display: grid;
