@@ -214,12 +214,6 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 }
 
 
-/* 
-@keyframes abt:hover {
-            from { transform: scale(.95); opacity: 1; }
-            to   { transform: scale(1); opacity: 1; }
-        }  */
-
 @media (min-width: 961px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
 
     
