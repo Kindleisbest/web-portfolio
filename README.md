@@ -27,3 +27,4 @@
 2.1.1 through 2.1.4: bug and minor style fixes <br>
 2.2: Added animations to the about me section that the animations where broken for a while (I used AI to fix and clean up my code because out of the life of me I couldnt figure out animations in media states chatgpt.com)<br>
 2.2.1: Line breaks in the readme.md file <br>
+2.2.2: animations worked in localhost but not in the deployed site so this update is a bug fix <br>
