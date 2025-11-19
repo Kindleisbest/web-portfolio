@@ -41,6 +41,12 @@
                   document.querySelector(".nav-links ul").classList.toggle("show");
                 }
               </script>
+
+              <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer> 
+
+              </script>
+              <link rel="preconnect" href="https://challenges.cloudflare.com">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq"></div>
             
             <div class="nav-links">
             <ul>
@@ -56,8 +62,10 @@
         
     </header>
     <main>
-        <button onclick="netlifyIdentity.open()">Sign In with GitHub</button>
+        <button onclick="netlifyIdentity.open()">Log In</button>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq" data-theme="light" data-size="normal" data-callback="onSuccess"> 
+        </div>
         <section id="me">
             <figure>
                 <div id="profileDiv">
