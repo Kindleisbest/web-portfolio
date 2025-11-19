@@ -213,6 +213,12 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 }
 }
 
+@keyframes expandBox {
+  from { transform: scale(1); }
+  to   { transform: scale(1.15); }
+}
+
+
 
 @media (min-width: 961px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
 
@@ -239,105 +245,68 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
   
 
 
-    #abt{
-        position: relative;
-        width:675px;
-        max-width: fit-content;
-        height: 230px;
-        padding: 20px;
-        margin: auto;
-        /* background-color: rgb(0, 140, 255); */
-        margin-top: auto; 
-        overflow: hidden;
-        border-radius: 10px;
-        background-color: rgb(0, 140, 255);
-        border: rgb(0, 0, 0) solid 2px;
-    }
-    #abt::after{
-        content: ""; /* Creates the pseudo-element */
-        position: absolute; /* Position it absolutely within #abt */
-        left: 0; 
-        right: 0;
-        bottom: 0;
-        height: 60px; /* Adjust for desired blur size */
-        pointer-events: none; /* Allow clicks to pass through */
-        background: linear-gradient(to bottom, rgba(0,140,255, 0.9) 40%,rgba(0,140,255, 0.9) 80%, rgba(0,140,255,1) 100%); 
-        border-radius: inherit;
-        opacity: 1;
-        .overlay-text {
-    opacity: 1.000;
-}
-    }
-    #abt:hover{
-        position: fixed;
-        top: 20px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;            /* full screen width */
-        height: 95%;           /* full screen height */
-        max-height: 80%;
-        overflow: auto;          /* allow scrolling if text is long */
-        padding: 2rem;           /* including this line past 8 is AI w/ modifications due to my knowledge gap*/
-        background:rgb(0, 140, 255) ;
-        /* background-color: rgb(0, 140, 255); */
-        display: flex; 
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #abt.expanded{
-        position: fixed;         /* take it out of normal flow */
-        transform: scale(1.12);
-        top: 20px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;            /* full screen width */
-        height: 95%;           /* full screen height */
-        max-height: 80%;
-        overflow: auto;          /* allow scrolling if text is long */
-        padding: 2rem;           /* including this line past 8 is AI w/ modifications due to my knowledge gap*/
-        background:rgb(0, 140, 255) ;
-        /* background-color: rgb(0, 140, 255); */
-        display: flex; 
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    #abt.expanded.enter {
-        transform: translate(-50%, -50%) scale(0.86);
-        opacity: 0;
-}
-    #abt.expanded.enter-active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    }
-    .overlay-text {
-        position: absolute;
-        bottom: 12px; /* lift a bit from the edge */
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;                 /* above ::after */
-        pointer-events: none;       /* don't block clicks */
-        color: #fff;                /* dark text on light blur */
-        font-weight: 700;
-        padding: 6px 10px;
-        border-radius: 6px;
-        background: rgba(255,255,255,0); /* optional background */
-        transition: opacity 0.25s ease;
-        opacity: 1;
+    /* Smooth expand animation */
+#abt { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    position: relative;
+    width: 675px;
+    max-width: fit-content;
+    height: 230px;
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(0, 140, 255);
+    border: 2px solid black;
+    transition: transform 0.4s ease, height 0.4s ease, padding 0.4s ease;
 }
 
-/* when the card expands on hover, hide the blur and text */
-#abt:hover::after {
-  opacity: 0;
+/* Bottom gradient overlay */
+#abt::after { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    content: "";
+    position: absolute;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 140, 255, 0.9) 40%,
+        rgba(0, 140, 255, 0.9) 80%,
+        rgba(0, 140, 255, 1) 100%
+    ); 
+    border-radius: inherit;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
-#abt:hover .overlay-text {
-  opacity: 0;
+
+/* Overlay text */
+.overlay-text { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+    color: white;
+    font-weight: 700;
+    transition: opacity 0.3s ease;
+}
+
+/* 🔥 Hover state — smooth expand */
+#abt:hover { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    transform: scale(1.10);   /* nice zoom effect */
+    height: 300px;            /* expands vertically */
+    padding: 2rem;            /* more interior spacing */
+    overflow: auto;           /* reveal scrollable content */
+}
+
+/* Hide bottom gradient + text during hover */
+#abt:hover::after { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    opacity: 0;
+}
+#abt:hover .overlay-text { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
+    opacity: 0;
 }
 
 }
