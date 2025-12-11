@@ -20,10 +20,7 @@ main{
 }
 
 /* navbar */
-.navbar{
-    display: flex;
-    flex-direction: column;
-}
+
 header {
     background-color: black;
     
@@ -50,10 +47,6 @@ header h1{
 
 .logo h1{
     font-size: 1.5rem;
-    color: white;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
     margin: auto;
 }
 
@@ -115,39 +108,40 @@ such that no text wraps
 @media (max-width: 599.99px) {
     
     header ul{
-        justify-self: center;
-        align-self: center;
         margin: auto;
-        width: 100px;
-        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
     .navbar{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin: auto;
+        padding: 2rem;
 
     }
-    .navbar li{
-        margin: auto;
-
-    }
+   
 }
 @media (min-width: 600px) and (max-width: 999.99px) {
     
     header ul{
-        justify-self: center;
-        align-self: center;
         margin: auto;
-        width: 100px;
-        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
     .navbar{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin: auto;
-
     }
-    .navbar li{
-        margin: auto;
 
+    #logo{
+        align-items: center;
     }
 }
 @media screen and (min-width: 1000px) {

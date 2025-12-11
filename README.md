@@ -31,3 +31,4 @@
 2.2.3: the last update had an unnecessary changed it turned out my browser had cached data I thought my code was broken and I made a change of duplicate cloudflare captcha <br>  
 2.2.4: minor verbage change. <br>
 2.3: minor css change and I moved the account button to the nav bar and moved the captcha to the bottom. <br>
+2.3.1: Fixed: the allignment with nav bar on mobile <br> Known bugs: when resizing the window the nav bar text is jittery
