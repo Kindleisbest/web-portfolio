@@ -34,3 +34,5 @@
 2.3.1: Fixed: the allignment with nav bar on mobile <br> Known bugs: when resizing the window the nav bar text is jittery <br>
 2.3.2: tested device iphone 15 displayed another css bug with nav bar that hopefully this fixes
 2.3.3: fixed the css but the known issue from 2.3.1 still remains.
+## Version 3
+3.0: Overhaul on nav bar and footer. Added my own website as a project. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs.

@@ -19,28 +19,40 @@
     <!--CSS htmlwide-->
     <link rel="stylesheet" href="./css/style.css?v=1">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header>
         <!--Nav bar-->   
         <nav>
             <div class="logo">
-                <img src="/img/logo.svg" alt="logo">
+
+                
+        </div>
+            
+            <div class="logo">
+                <img src="/img/logo.svg">
                 
                 <h1>Portfolio</h1>
             </div>
-            <div class="hamburgerMenu" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+
+
+            
+            
+            <div class="logo" id="menu">
+                <div class="hamburgerMenu" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
               </div>
-              
               <script>
                 function myFunction(x) {
                   x.classList.toggle("change");
                   document.querySelector(".nav-links ul").classList.toggle("show");
                 }
               </script>
+            </div>  
+              
 
    
             
@@ -81,6 +93,18 @@
         </section>
         <section id="Projects">
             <h2>Projects</h2>
+            <section class="project">
+                <h3>This Website</h3>
+                <img src="./img/andrewnashedorg.png" alt="screenshot of website" class="project-img">
+                <p>I used everything I learned from all the web based classes I have taken to create a web based portfolio. I also used bits and pieces from w3schools and even used AI to debug and brainstorm ideas for my portfolio. To know what I am up to go towards my read me section in my source code on github.</p>
+                <br>
+                <a href="https://github.com/Kindleisbest/web-portfolio" target="_blank">
+                    <button class="btn">Code</button> 
+                    </a>
+                </section>
+                <br>
+                <br>
+                <br>
             <section class="project">
                 <h3>Interactive Multimedia Marquee</h3>
                 <img src="./img/Marque.gif" alt="Marquee of a word Charger" class="project-img">
@@ -188,9 +212,12 @@
     </main>
     <footer> 
         <h4>&copy; 2025 Andrew Nashed. All rights reserved.</h4>
-        <a href="https://www.x.com/techtalkspage" target="_blank" type="button">𝕏</a>
-        <a href="https://github.com/Kindleisbest?tab=repositories" target="_blank" type="button">Github</a>
-        <a href="https://www.roblox.com/share/g/7995182" target="_blank" type="button">Roblox Group</a>
+        <ul>
+        <li><a href="https://www.x.com/techtalkspage" target="_blank">𝕏</a></li>
+        <li><a href="https://www.github.com/Kindleisbest" target="_blank">Github</a></li>
+        <li><a href="https://www.roblox.com/share/g/7995182" target="_blank">Roblox Group</a></li>
+        <li><a href="https://www.instagram.com/andrew_nashed_2024" target="_blank">Instagram</a></li>
+        </ul>
         
         
     </footer>

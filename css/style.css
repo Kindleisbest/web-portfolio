@@ -99,33 +99,8 @@ p{
 h3{
     text-align: center;
 }
-footer { /*creates the footer that we all know and love by creating the thick black line at the bottem and added the copyrights and socials*/
-    border: none;
-    position: relative;
-    background-color: black;
-    color:white;
-    text-decoration-color: #ffff;
-    text-align:center;
-    padding-top: 5px;
-    padding-bottom: 15px;
-}
-footer h4 { /*add reasonable space below text for the buttons instead of leaving it up to the browsers to decide*/
-    margin:5px;
-    margin-top: 10px;
-}
 
-[type="button"]{ /*creates the buttons in the footer for the socials*/
-    padding: 1px;
-    background-color: white;
-    text-decoration: none;
-    align-self: center;
-    justify-self:center;
-    color: black;
-    border-radius: 3px;
-    margin: 5px;
 
-    
-}
 #survey form /*Creates the style for the contact form*/{
     display: grid;
     grid-template-columns: 1fr;
@@ -293,12 +268,12 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
     transition: opacity 0.3s ease;
 }
 
-/* 🔥 Hover state — smooth expand */
-#abt:hover { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    transform: scale(1.10);   /* nice zoom effect */
-    height: 300px;            /* expands vertically */
-    padding: 2rem;            /* more interior spacing */
-    overflow: auto;           /* reveal scrollable content */
+
+#abt:hover { 
+    transform: scale(1.10);   
+    height: 300px;            
+    padding: 2rem;            
+    overflow: auto;           
 }
 
 /* Hide bottom gradient + text during hover */
