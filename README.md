@@ -29,3 +29,4 @@
 2.2.1: Line breaks in the readme.md file <br>
 2.2.2: animations worked in localhost but not in the deployed site so this update is a bug fix <br>
 2.2.3: the last update had an unnecessary changed it turned out my browser had cached data I thought my code was broken and I made a change of duplicate cloudflare captcha <br>  
+2.2.4: minor verbage change. <br>
