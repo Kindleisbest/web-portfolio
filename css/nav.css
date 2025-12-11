@@ -105,26 +105,10 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
-@media (max-width: 599.99px) {
-    
-    header ul{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-    }
-    .navbar{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
 
-    }
    
-}
-@media (min-width: 600px) and (max-width: 999.99px) {
+
+@media (max-width: 999.99px) {
     
     header ul{
         margin: auto;
