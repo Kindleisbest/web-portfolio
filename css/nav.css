@@ -51,6 +51,7 @@ header h1{
 }
 
 
+
 /* navigation list */
 
 header li{
@@ -110,23 +111,26 @@ such that no text wraps
 
 @media (max-width: 999.99px) {
     
-    header ul{
-        margin: auto;
+    header ul li{
+        margin-left: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        padding: 0.5rem;
     }
-    .navbar{
-        margin: auto;
+   .navbar{
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
+        margin: 0 auto;
+   }
 
-    #logo{
+   .logo{
+        margin: auto;
         align-items: center;
-    }
+        display: flex;
+        flex-direction: column;
+   }
 }
 @media screen and (min-width: 1000px) {
     header a{

@@ -33,3 +33,4 @@
 2.3: minor css change and I moved the account button to the nav bar and moved the captcha to the bottom. <br>
 2.3.1: Fixed: the allignment with nav bar on mobile <br> Known bugs: when resizing the window the nav bar text is jittery <br>
 2.3.2: tested device iphone 15 displayed another css bug with nav bar that hopefully this fixes
+2.3.3: fixed the css but the known issue from 2.3.1 still remains.
