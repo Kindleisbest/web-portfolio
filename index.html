@@ -50,6 +50,7 @@
                 <li><a href="#aboutMe">About Andrew</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#survey">Contact</a></li>
+                <li><button onclick="netlifyIdentity.open()">Account</button></li>
             </ul>
         </div>
         </nav>
@@ -58,16 +59,8 @@
         
     </header>
     <main>
-        <button onclick="netlifyIdentity.open()">Account</button>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 
         
-            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer> 
-              </script>
-              <link rel="preconnect" href="https://challenges.cloudflare.com">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq"></div>
-              <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer>
-                </script>
-
             
         <section id="me">
             <figure>
@@ -201,6 +194,14 @@
         
         
     </footer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer> 
+              </script>
+              <link rel="preconnect" href="https://challenges.cloudflare.com">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq"></div>
+              <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer>
+                </script>
 
 </body>
 </html>
