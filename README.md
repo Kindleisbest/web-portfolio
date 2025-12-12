@@ -1,3 +1,13 @@
+# Copyrights and Lisences
+
+## Copyrights:
+© 2025 Andrew Nashed. All rights reserved.
+
+## License
+
+You may not use, copy, modify, merge, publish, sublicense, distribute, or create derivative works of this code for any purpose, 
+commercial or personal, without explicit written permission from the author.
+
 # Documentation
 
 ## Version 1
