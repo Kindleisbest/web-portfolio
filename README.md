@@ -50,3 +50,4 @@ commercial or personal, without explicit written permission from the author.
 3.1.1: Minor mobile change Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs. <br>
 3.1.2: Made  images smaller and got rid of useless images(In live preview server potential problem for safari but waiting for this to go live to see if I can replicate this on other devices)<br>
 3.1.3: added a manifest [beta] I am unsure how this works. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature, fixing the bugs, and better my websites on features it either has or shoud've had.<br>
+3.1.4: added a new link manifest and hopefully it fixes the problems that lighthouse was spitting out.<br>
