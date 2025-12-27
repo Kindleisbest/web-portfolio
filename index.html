@@ -10,11 +10,18 @@
     <meta property="og:image" content="https://andrewnashed.org/img/logo.svg">
     <meta property="og:url" content="https://andrewnashed.org">
     <meta property="og:type" content="portfolio"> <!--pulled off of google AI Overview-->
+    <meta name="author" content="Andrew Nashed">
+    <meta name="theme-color" content="#0099FF"><!--https://www.instagram.com/reel/DSKAH2tjieJ/?igsh=MXB1M2czdG05cGcwbg== credit-->
 
     <meta name="description" content="A personal portfolio showcasing my projects, skills, and accomplishments."> <!--Accurate but I used AI because I was unfamiliar with this tag so the description is accurate just AI Generated-->
+    <!--twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://andrewnashed.org/img/logo.svg">
+    <meta name="twitter:url" content="https://andrewnashed.org">
+    <meta name="twitter:title" content="Portfolio">
+    <meta name="twitter:description" content="A personal portfolio showcasing my projects, skills, and accomplishments."><!--Autocomplete recommended and I thought it was a good idea to include it also i dont think i will ever tweet this but just in case-->
 
-
-
+<!--links-->
     <link rel="icon" type="image/ico" href="/img/logo.ico">
     <!--CSS htmlwide-->
     <link rel="stylesheet" href="./css/style.css?v=1">
@@ -31,7 +38,7 @@
         </div>
             
             <div class="logo">
-                <img src="/img/logo.svg">
+                <img src="/img/logo.svg" alt="Logo" fetchpriority="high">
                 
                 <h1>Portfolio</h1>
             </div>
@@ -95,7 +102,7 @@
             <h2>Projects</h2>
             <section class="project">
                 <h3>This Website</h3>
-                <img src="./img/andrewnashedorg.png" alt="screenshot of website" class="project-img">
+                <img src="./img/andrewnashedorg.png" alt="screenshot of website" class="project-img" fetchpriority="high">
                 <p>I used everything I learned from all the web based classes I have taken to create a web based portfolio. I also used bits and pieces from w3schools and even used AI to debug and brainstorm ideas for my portfolio. To know what I am up to go towards my read me section in my source code on github.</p>
                 <br>
                 <a href="https://github.com/Kindleisbest/web-portfolio" target="_blank">
@@ -107,7 +114,7 @@
                 <br>
             <section class="project">
                 <h3>Interactive Multimedia Marquee</h3>
-                <img src="./img/Marque.gif" alt="Marquee of a word Charger" class="project-img">
+                <img src="./img/Marque.gif" alt="Marquee of a word Charger" class="project-img" fetchpriority="high">
                 <p>In interactive multimedia I learned about animations where I learned how to animate a Marquee using severel frames each frame little different from the previous one to give the illusion of animation since animation is several frames doing different things. Fun fact whenever someone in the field to do with videos always talk about FPS this is what they are talking about of how many photos in a single second where each photo is little different then the previous. Higher the fps more pictures in a single frame more smooth the video comes out.</p>
                 <br>
                 <a href="https://www.piskelapp.com" target="_blank">
@@ -119,7 +126,7 @@
                 <br>
             <section class="project">
                 <h3>Web Dev 1 Midterm project</h3>
-                <img src="./img/Midterm.jpg" alt="Midterm Project Screenshot" class="project-img">
+                <img src="./img/Midterm.jpg" alt="Midterm Project Screenshot" class="project-img" fetchpriority="high">
                 <p>In Web Dev 1 class for my midterm "exam" I worked with the concepts I learned the first half of the year within 1 week to show the different concepts for as an example for css I showed the grid view for the gallery abd or flex I used for the reviews. the exam itself was that I had to make a fake buisness with reviews. Since I was still learning media states here for the best results please open the website on a computer or laptop.</p>
                 <a href="https://midterm-kindleisbest.netlify.app" target="_blank">
                     <button class="btn">Website</button> 
@@ -135,7 +142,7 @@
             <br>
             <section class="project">
                 <h3>Web Dev 1 Working with Tables</h3>
-                <img src="./img/Tables.jpg" alt="Tables Project Screenshot" class="project-img">
+                <img src="./img/Tables.jpg" alt="Tables Project Screenshot" class="project-img" fetchpriority="high">
                 <p>In Web Dev 1 class from this project I learned about tables and how they worked with html. Since I was still learning media states here for the best results please open the website on a computer or laptop.</p>
                 <a href="https://working-with-tables-kindleisbest.netlify.app" target="_blank">
                     <button class="btn">Website</button> 
@@ -151,7 +158,7 @@
             <br>
             <section class="project">
                 <h3>Web Dev 1 Final Project</h3>
-                <img src="./img/main.jpg" alt="Final Project Screenshot" class="project-img">
+                <img src="./img/main.jpg" alt="Final Project Screenshot" class="project-img" fetchpriority="high">
                 <p>In Web Dev 1 I learned a broad  spectrum of concepts in html and css. The concepts I learned ranged from grids andd flex to forms and I even learned about media states. Other than media states the biggest thing I learned was the Nav Bar as well. </p>
                 <a href="https://about-me-kindleisbest.netlify.app" target="_blank">
                     <button class="btn">Website</button> 
@@ -210,6 +217,14 @@
     <br>
     
     </main>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer> 
+              </script>
+              <link rel="preconnect" href="https://challenges.cloudflare.com">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq"></div>
+              <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer>
+                </script>
     <footer> 
         <h4>&copy; 2025 Andrew Nashed. All rights reserved.</h4>
         <ul>
@@ -221,14 +236,7 @@
         
         
     </footer>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        
-            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer> 
-              </script>
-              <link rel="preconnect" href="https://challenges.cloudflare.com">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAACBy3yBw4a0bDQFq"></div>
-              <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer>
-                </script>
+
 
 </body>
 </html>
