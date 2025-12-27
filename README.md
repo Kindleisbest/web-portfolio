@@ -47,4 +47,4 @@ commercial or personal, without explicit written permission from the author.
 ## Version 3
 3.0: Overhaul on nav bar and footer. Added my own website as a project. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs.<br>
 3.1: small html rearrangements with the captcha. I also added Fetch High priority tags to my code. I also added a few meta tags to do with twitter, author, and theme color meta tags.<br>
-3.0.1: Minor mobile change Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs. <br>
+3.1.1: Minor mobile change Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs. <br>
