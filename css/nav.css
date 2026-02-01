@@ -111,7 +111,23 @@ such that no text wraps
 
 @media (max-width: 999.99px) {
     
-    
+.logo{
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin: auto ;
+    padding-top: 5px;
+}
+menu{
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
 nav{
     display: grid;
     flex-direction: column;

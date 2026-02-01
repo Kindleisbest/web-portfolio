@@ -54,3 +54,4 @@ commercial or personal, without explicit written permission from the author.
 **3.1.5:** Added eager and lazy loading. <br>
 **3.1.6:** Changed image types mostly to webp for compression and decompression.<br>
 **3.1.7:** Minor html changes <br>
+**3.1.8:** Minor css changes<br>
