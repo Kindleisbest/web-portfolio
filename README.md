@@ -11,45 +11,46 @@ commercial or personal, without explicit written permission from the author.
 # Documentation
 
 ## Version 1
-1.1: Because of lack of documentation during my progress this will be the initial launch <br>
-1.2: I restructured the website to how I wanted to have the elements in <br>
-1.2.1: fixed nav bar <br>
-1.2.2: fixed title <br>
-1.2.3: shrunk images to optimize for mobile users <br>
-1.2.4: Made minor changes to the code <br>
-1.3: changes to the header ad footer <br>
-1.4: Added a recapcha to the forms <br>
-1.4.1 through 1.4.10: recaptcha bug fix <br>
-1.5: tested the idea of form uploads <br>
-1.6: added meta data for seo <br>
-1.7: removed file upload and updated hyper links <br>
-1.7.1: updated more hyperlinks <br>
-1.8: tweaked the style a bit <br>
-1.9: Creation of the readme.md file (so some detales may be screwed up) <br>
-1.10: added a project <br>
-1.11: tested code <br>
-1.12: tested github.io pages <br>
+**1.1:** Because of lack of documentation during my progress this will be the initial launch <br>
+**1.2:** I restructured the website to how I wanted to have the elements in <br>
+**1.2.1:** fixed nav bar <br>
+**1.2.2:** fixed title <br>
+**1.2.3:** shrunk images to optimize for mobile users <br>
+**1.2.4:** Made minor changes to the code <br>
+**1.3:** changes to the header ad footer <br>
+**1.4:** Added a recapcha to the forms <br>
+**1.4.1** through 1.4.10: recaptcha bug fix <br>
+**1.5:** tested the idea of form uploads <br>
+**1.6:** added meta data for seo <br>
+**1.7:** removed file upload and updated hyper links <br>
+**1.7.1:** updated more hyperlinks <br>
+**1.8:** tweaked the style a bit <br>
+**1.9:** Creation of the readme.md file (so some detales may be screwed up) <br>
+**1.10:** added a project <br>
+**1.11:** tested code <br>
+**1.12:** tested github.io pages <br>
 
 ## Version 2
-2.0: added github OAuth to see if I could <br>
-2.0.1: added a sign in (still seeing what I could do with it) and bug fixes <br>
-2.1: Added cloudflare captcha as a load captcha to make sure the people loading onto the site are real people <br>
-2.1.1 through 2.1.4: bug and minor style fixes <br>
-2.2: Added animations to the about me section that the animations where broken for a while (I used AI to fix and clean up my code because out of the life of me I couldnt figure out animations in media states chatgpt.com)<br>
-2.2.1: Line breaks in the readme.md file <br>
-2.2.2: animations worked in localhost but not in the deployed site so this update is a bug fix <br>
-2.2.3: the last update had an unnecessary changed it turned out my browser had cached data I thought my code was broken and I made a change of duplicate cloudflare captcha <br>  
-2.2.4: minor verbage change. <br>
-2.3: minor css change and I moved the account button to the nav bar and moved the captcha to the bottom. <br>
-2.3.1: Fixed: the allignment with nav bar on mobile <br> Known bugs: when resizing the window the nav bar text is jittery <br>
-2.3.2: tested device iphone 15 displayed another css bug with nav bar that hopefully this fixes
-2.3.3: fixed the css but the known issue from 2.3.1 still remains.
+**2.0:** added github OAuth to see if I could <br>
+**2.0.1**: added a sign in (still seeing what I could do with it) and bug fixes <br>
+**2.1:** Added cloudflare captcha as a load captcha to make sure the people loading onto the site are real people <br>
+**2.1.1:** through 2.1.4: bug and minor style fixes <br>
+**2.2:** Added animations to the about me section that the animations where broken for a while (I used AI to fix and clean up my code because out of the life of me I couldnt figure out animations in media states chatgpt.com)<br>
+**2.2.1:** Line breaks in the readme.md file <br>
+**2.2.2:** animations worked in localhost but not in the deployed site so this update is a bug fix <br>
+**2.2.3:** the last update had an unnecessary changed it turned out my browser had cached data I thought my code was broken and I made a change of duplicate cloudflare captcha <br>  
+**2.2.4:** minor verbage change. <br>
+**2.3:** minor css change and I moved the account button to the nav bar and moved the captcha to the bottom. <br>
+**2.3.1:** Fixed: the allignment with nav bar on mobile <br> Known bugs: when resizing the window the nav bar text is jittery <br>
+**2.3.2:** tested device iphone 15 displayed another css bug with nav bar that hopefully this fixes
+**2.3.3:** fixed the css but the known issue from 2.3.1 still remains.
 ## Version 3
-3.0: Overhaul on nav bar and footer. Added my own website as a project. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs.<br>
-3.1: small html rearrangements with the captcha. I also added Fetch High priority tags to my code. I also added a few meta tags to do with twitter, author, and theme color meta tags.<br>
-3.1.1: Minor mobile change Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs. <br>
-3.1.2: Made  images smaller and got rid of useless images(In live preview server potential problem for safari but waiting for this to go live to see if I can replicate this on other devices)<br>
-3.1.3: added a manifest [beta] I am unsure how this works. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature, fixing the bugs, and better my websites on features it either has or shoud've had.<br>
-3.1.4: added a new link manifest and hopefully it fixes the problems that lighthouse was spitting out.<br>
-3.1.5: Added eager and lazy loading. <br>
-3.1.6: Changed image types mostly to webp for compression and decompression.<br>
+**3.0:** Overhaul on nav bar and footer. Added my own website as a project. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs.<br>
+**3.1:** small html rearrangements with the captcha. I also added Fetch High priority tags to my code. I also added a few meta tags to do with twitter, author, and theme color meta tags.<br>
+**3.1.1:** Minor mobile change Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature and fixing the bugs. <br>
+**3.1.2:** Made  images smaller and got rid of useless images(In live preview server potential problem for safari but waiting for this to go live to see if I can replicate this on other devices)<br>
+**3.1.3:** added a manifest [beta] I am unsure how this works. Known issues: allignment issues with the nav bar and text overlay issue for desktop users after scrolling the about me section. Still working on: trying to build a sysyem around the account feature, fixing the bugs, and better my websites on features it either has or shoud've had.<br>
+**3.1.4:** added a new link manifest and hopefully it fixes the problems that lighthouse was spitting out.<br>
+**3.1.5:** Added eager and lazy loading. <br>
+**3.1.6:** Changed image types mostly to webp for compression and decompression.<br>
+**3.1.7:** Minor html changes <br>
