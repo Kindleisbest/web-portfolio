@@ -1,6 +1,7 @@
 # Copyrights and Lisences
 
 ## Copyrights:
+© 2026 Andrew Nashed. All rights reserved.
 © 2025 Andrew Nashed. All rights reserved.
 
 ## License
@@ -55,3 +56,4 @@ commercial or personal, without explicit written permission from the author.
 **3.1.6:** Changed image types mostly to webp for compression and decompression.<br>
 **3.1.7:** Minor html changes <br>
 **3.1.8:** Minor css changes<br>
+**3.1.9:** Minor footer changes where the buttons I addedborders to make it clear that its a button and since these changes happened in 2026 i updated 2025 to 2026 in the copyrights.
