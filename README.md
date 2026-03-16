@@ -56,4 +56,5 @@ commercial or personal, without explicit written permission from the author.
 **3.1.6:** Changed image types mostly to webp for compression and decompression.<br>
 **3.1.7:** Minor html changes <br>
 **3.1.8:** Minor css changes<br>
-**3.1.9:** Minor footer changes where the buttons I addedborders to make it clear that its a button and since these changes happened in 2026 i updated 2025 to 2026 in the copyrights.
+**3.1.9:** Minor footer changes where the buttons I addedborders to make it clear that its a button and since these changes happened in 2026 i updated 2025 to 2026 in the copyrights.<br>
+**3.2:** I added a skeleton loading screen. I did use AI to create it so its not my work I did change the color thats it.<br>

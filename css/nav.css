@@ -1,24 +1,4 @@
 
-/* make scrolling smooth */
-html{
-    scroll-behavior: smooth;
-}
-
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
-body{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-/* add some padding back to rest of page */
-main{
-    padding: 2vw;
-}
-
 /* navbar */
 
 header {
@@ -135,7 +115,6 @@ nav{
     align-items: center;
     justify-content: center;
     position: relative;
-    /* width: fit-content; */
     margin-bottom: 10px;
 }
 
@@ -147,8 +126,6 @@ nav{
     right: 25px; 
     top: 30px;
     z-index: 9999;
- 
-    
   }
   .hamburgerMenu:hover, .hamburgerMenu:focus{
     background-color: black;
@@ -176,8 +153,6 @@ nav{
     transform: translate(0, -11px) rotate(45deg);
   }
 
-
-
 }
 @media screen and (min-width: 1000px) {
     nav{
@@ -194,16 +169,6 @@ nav{
         width: auto;
         margin-bottom: 0;
     } 
-    
-
-
-
-
-
-
-
-
-
 
 }
 /* For nav bar to behave on smaller screens. */
