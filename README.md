@@ -58,3 +58,5 @@ commercial or personal, without explicit written permission from the author.
 **3.1.8:** Minor css changes<br>
 **3.1.9:** Minor footer changes where the buttons I addedborders to make it clear that its a button and since these changes happened in 2026 i updated 2025 to 2026 in the copyrights.<br>
 **3.2:** I added a skeleton loading screen. I did use AI to create it so its not my work I did change the color thats it.<br>
+## Version 4
+**4.0.0(beta):** I am testing the idea of being able to access previous form submissions so people can follow up with it. Later on I might be adding a ref code to easily ref prev submissions.
