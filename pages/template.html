@@ -100,6 +100,7 @@
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#survey">Contact</a></li>
                 <li><button onclick="netlifyIdentity.open()">Log in/out</button></li>
+                <li><a href="./pages/form.html">Submissions</a></li>
                 <li><a href="./pages/blog.html">Blog</a></li>
             </ul>
         </div>
@@ -109,27 +110,7 @@
         
     </header>
     <main>
-      <div id="submissions"></div>
 
-<script>
-async function loadSubmissions() {
-  const res = await fetch("/.netlify/functions/get-submissions");
-  const data = await res.json();
-
-  const container = document.getElementById("submissions");
-
-  data.submissions.forEach(sub => {
-    const div = document.createElement("div");
-    div.innerHTML = `
-      <h3>${sub.subject}</h3>
-      <p>${sub.message}</p>
-    `;
-    container.appendChild(div);
-  });
-}
-
-loadSubmissions();
-</script>
     </main>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         
