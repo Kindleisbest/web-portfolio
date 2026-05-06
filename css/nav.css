@@ -5,7 +5,7 @@ header {
     background-color: black;
     
     border: none;
-    position: relative;
+    position: sticky;
 }
 
 header h1{
@@ -23,11 +23,9 @@ header h1{
     justify-content: center;
     margin: auto ;
     padding-top: 5px;
-}
-
-.logo h1{
-    font-size: 1.5rem;
-    margin: auto;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 
@@ -39,6 +37,23 @@ header li{
     color: white;
     list-style-type: none;
     padding: 0.5em 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+}
+nav li{
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 header button{
     justify-self: center;
@@ -80,6 +95,9 @@ header button:hover, header button:focus{
 
 nav{
     position: sticky;
+    z-index: 99999;
+    overflow: hidden;
+    position: -webkit-sticky;
 }
 
 
