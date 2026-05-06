@@ -78,6 +78,9 @@ header button:hover, header button:focus{
     text-decoration: none; 
 }
 
+nav{
+    position: sticky;
+}
 
 
 
@@ -114,7 +117,6 @@ nav{
     grid-template-columns: repeat(3, 1rem);
     align-items: center;
     justify-content: center;
-    position: relative;
     margin-bottom: 10px;
 }
 
