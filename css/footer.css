@@ -7,6 +7,8 @@ footer { /*creates the footer that we all know and love by creating the thick bl
     text-align:center;
     padding-top: 5px;
     padding-bottom: 15px;
+    justify-content: center;
+    display: grid;
     
 }
 footer h4 { /*add reasonable space below text for the buttons instead of leaving it up to the browsers to decide*/
@@ -16,6 +18,7 @@ footer h4 { /*add reasonable space below text for the buttons instead of leaving
 }
 footer a { /*styles the social media buttons in the footer*/
     color: white;
+    display: flex;
     background-color: black;
     font-size: 24px;
     text-decoration:none;
@@ -25,8 +28,8 @@ footer a { /*styles the social media buttons in the footer*/
     border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
-    
-    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
     border: 1px gray solid;
     
 }
@@ -38,6 +41,7 @@ footer ul { /*styles the list of social media buttons in the footer*/
     height: auto;
     width: fit-content;
     justify-self: center;
+    justify-content: center;
     gap: 20px;
 }
 footer a:hover { /*adds hover effect to the social media buttons in the footer*/
@@ -46,4 +50,8 @@ footer a:hover { /*adds hover effect to the social media buttons in the footer*/
     border-radius: 5px;
     padding-left: 2px;
     padding-right: 2px;
+}
+footer li {
+    
+    justify-self: center;
 }
