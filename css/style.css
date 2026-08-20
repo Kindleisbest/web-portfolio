@@ -1,22 +1,24 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(0, 153,255);
+body {
+    background-color: rgb(0, 153, 255);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-main{
+
+main {
     padding: 2vw;
 }
-#me{
+
+#me {
     display: block;
     margin-left: auto;
     margin-right: auto;
     justify-self: center;
-    }
+}
 
 #imgA {
     display: block;
@@ -25,53 +27,60 @@ main{
     border-radius: 70px;
     width: 200px;
     max-width: 100%;
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     justify-items: center;
- }
- #contact{
-    margin: auto;
-    width:715px;
-    max-width: fit-content;
+}
 
+/* Shared panel appearance */
+#contact,
+.project,
+#survey form {
+    max-width: fit-content;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+}
+
+#contact {
+    margin: auto;
+    width: 715px;
     justify-self: center;
     text-align: center;
-    padding: 10 px;
-    border-radius: 10px;
-    background-color: rgb(0,140,255);
-    padding-top: 15px;
-    padding-bottom: 15px;
- }
- #email{
+    padding: 15px 0;
+}
+
+#email {
     display: flex;
     justify-self: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
 
- }
- #profileDiv {
+#profileDiv {
     align-self: center;
- }
- figcaption{
-        padding: 10px;
-        background-color: #008ff6;
-        border-radius: 100px;
-        text-align: center;
-        font-weight: bolder;
-        font-size: large;
-    }
-    #Projects{
-        justify-self: center;
-        text-align: center;
-        font-weight: bolder;
-    }
-#Submit{
+}
+
+figcaption {
+    padding: 10px;
+    background-color: #008ff6;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#Projects {
+    justify-self: center;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#Submit {
     justify-self: center;
 }
-.btn, a.btn{
+
+.btn,
+a.btn {
     padding: 10px;
     width: 100px;
     height: 40px;
@@ -81,12 +90,15 @@ main{
     border-radius: 10px;
     justify-self: center;
 }
-.btn:hover, a.btn:hover{
-    cursor:pointer;
-    filter:invert(100%);
+
+.btn:hover,
+a.btn:hover {
+    cursor: pointer;
+    filter: invert(100%);
     text-decoration: none;
 }
-.inputs{
+
+.inputs {
     padding: 5px;
     border-radius: 10px;
     width: 50%;
@@ -94,44 +106,39 @@ main{
     max-width: 300px;
     justify-self: center;
 }
-label{
+
+label {
     font-weight: bolder;
     text-align: center;
 }
-p{
+
+p {
     margin-left: 10%;
     margin-right: 10%;
 }
-.project{
+
+.project {
     padding: 7.5px;
-    background-color: rgb(0, 140, 255);
-    border-radius: 10px;
-    width:700px;
-    max-width: fit-content;
-    display:inline-block;
+    width: 700px;
+    display: inline-block;
     justify-self: center;
 }
-h3{
+
+h3 {
     text-align: center;
 }
 
-
-#survey form /*Creates the style for the contact form*/{
+#survey form {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     justify-self: center;
-    background-color: rgb(0,140,255);
     padding: 10px;
-    border-radius: 10px;
-    margin: auto;
-    width:350px;
-    max-width: fit-content;
-    margin-bottom: 0px;
-    margin-top: 10px;   
+    margin: 10px auto 0;
+    width: 350px;
 }
 
-#captcha{
+#captcha {
     display: block;
     justify-self: center;
     margin-left: auto;
@@ -139,156 +146,119 @@ h3{
     cursor: pointer;
     align-self: center;
 }
-.project-img{
+
+.project-img {
     width: 80%;
     max-width: 600px;
     border: solid black 2px;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     justify-self: center;
 }
-#Andrew{
+
+#Andrew {
     width: 200px;
     max-width: 100%;
     margin: auto;
 }
 
-@media (max-width: 960px){ /*For smaller screens*/ 
+@media (max-width: 960px) {
     #imgA {
-        padding: 30px;
-        background-color: #008ff6;
-        border-radius: 70px;
-        width: 200px;
         max-width: fit-content;
-        padding-bottom: 30px;
-        margin-left: auto;
-        
- }
-
-    figcaption{
-        padding: 10px;
-        background-color: #008ff6;
-        border-radius: 100px;
-        text-align: center;
-        font-weight: bolder;
-        font-size: large;
     }
-    #abt{
-    height: 230px;
-    width:675px;
-    max-width: fit-content;
-    padding: 20px;
-    margin: auto;
-    background-color: rgb(0, 140, 255);
-    height: 230px;
-    overflow-y:scroll;
-    border-radius: 10px;
-    
-}
 
-.overlay-text {
-    opacity: 0.000;
-}
+    #abt {
+        height: 230px;
+        width: 675px;
+        max-width: fit-content;
+        padding: 20px;
+        margin: auto;
+        background-color: rgb(0, 140, 255);
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+
+    .overlay-text {
+        opacity: 0;
+    }
 }
 
 @keyframes expandBox {
-  from { transform: scale(1); }
-  to   { transform: scale(1.15); }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
 }
 
-
-
-@media (min-width: 961px){ /*creates css for larger screen (all mostly similar w/ different values than above)*/
-
-    
+@media (min-width: 961px) {
     #imgA {
-        padding: 30px;
-        background-color: #008ff6;
         border-radius: 100px;
         width: 300px;
-        max-width: 100%;
-        padding-bottom: 30px;
-        margin-left: auto;
-
-    
     }
-    figcaption{
+
+    figcaption {
         padding: 15px;
-        background-color: #008ff6;
-        border-radius: 100px;
-        text-align: center;
-        font-weight: bolder;
         font-size: larger;
     }
-  
 
+    /* Expand the About panel on hover. */
+    #abt {
+        position: relative;
+        width: 675px;
+        max-width: fit-content;
+        height: 230px;
+        padding: 20px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: rgb(0, 140, 255);
+        border: 2px solid black;
+        transition: transform 0.4s ease, height 0.4s ease, padding 0.4s ease;
+    }
 
-    /* Smooth expand animation */
-#abt { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    position: relative;
-    width: 675px;
-    max-width: fit-content;
-    height: 230px;
-    padding: 20px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: rgb(0, 140, 255);
-    border: 2px solid black;
-    transition: transform 0.4s ease, height 0.4s ease, padding 0.4s ease;
-}
+    #abt::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60px;
+        pointer-events: none;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 140, 255, 0.9) 80%,
+            rgba(0, 140, 255, 1) 100%
+        );
+        border-radius: inherit;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
 
-/* Bottom gradient overlay */
-#abt::after { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    bottom: 0;
-    height: 60px;
-    pointer-events: none;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 140, 255, 0.9) 40%,
-        rgba(0, 140, 255, 0.9) 80%,
-        rgba(0, 140, 255, 1) 100%
-    ); 
-    border-radius: inherit;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
+    .overlay-text {
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        pointer-events: none;
+        color: white;
+        font-weight: 700;
+        transition: opacity 0.3s ease;
+    }
 
-/* Overlay text */
-.overlay-text { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    pointer-events: none;
-    color: white;
-    font-weight: 700;
-    transition: opacity 0.3s ease;
-}
+    #abt:hover {
+        transform: scale(1.1);
+        height: 300px;
+        padding: 2rem;
+        overflow: auto;
+    }
 
-
-#abt:hover { 
-    transform: scale(1.10);   
-    height: 300px;            
-    padding: 2rem;            
-    overflow: auto;           
-}
-
-/* Hide bottom gradient + text during hover */
-#abt:hover::after { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    opacity: 0;
-}
-#abt:hover .overlay-text { /*AI generated to fix my animations that was almost not existant before please check update logs on GitHub t see what was the code before*/
-    opacity: 0;
-}
-
+    #abt:hover::after,
+    #abt:hover .overlay-text {
+        opacity: 0;
+    }
 }
