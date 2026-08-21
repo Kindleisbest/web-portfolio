@@ -89,9 +89,9 @@
             
             <div class="nav-links">
             <ul>
-                <li><a href="mailto:&#65;&#110;&#100;&#114;&#101;&#119;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#110;&#97;&#115;&#104;&#101;&#100;&#46;&#111;&#114;&#103;">Email</a></li>
-                <li><a href="./pages/form.html">Submissions</a></li>
-                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/form.html">Contact</a></li>
+                
+                <!--<li><a href="./pages/blog.html">Blog</a></li>-->
             </ul>
         </div>
         </nav>
@@ -196,47 +196,13 @@
         <div id="contact">
         <h3>Contact</h3>
         <p>The forms at the moment has a limit. So for best chances to reach me please feel free to email me. Otherwise thank you for filling out the contact form!</p>
-        <a href="mailto:&#65;&#110;&#100;&#114;&#101;&#119;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#110;&#97;&#115;&#104;&#101;&#100;&#46;&#111;&#114;&#103;">
-            <button class="btn" id="btn">Email Me!</button>
-            </a>
+        
+        <a href="pages/form.html">
+            <button class="btn">Forms</button>
+    </a>
     </div>
     <br>
-        <div id="survey">
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="form">
-            <label><h3>Survey</h3></label>
-            <label for="name">Name (Required): </label>
-            <input id="name" type="name" name="name" placeholder="Name" class="inputs" required/>
-            <br>
-            <label for="email">Email (Required): </label>
-            <input id="email" type="email" name="email" placeholder="Email" class="inputs" autocomplete="email" required/>
-            <br>
 
-            <label for="phone">Phone Number: </label>
-            <input id="phone" type="tel" name="phone" placeholder="Number" class="inputs" autocomplete="tel-local" required/>
-            <br>
-
-            <label for="perm">Would you like a contact back? (required):</label>
-            <select name="Would you like a contact back?" id="perm" class="inputs" autocomplete="name" required>
-            <optgroup label="Please select one">
-                <option value="no">No</option>
-                <option value="yes">Yes</option>
-            </optgroup>
-
-            </select>
-
-            <br>
-
-            <label for="message">Message (Required): </label>
-            <textarea id="message" name="message" placeholder="Message" class="inputs" required></textarea>
-            <br>
-            <label for="captcha">If the page refreshes instead of a confirmation page the captcha failed and the form did not submit</label>
-            <div data-netlify-recaptcha="true"  id="captcha"></div>
-            
-            <br>
-            <button type="submit" class="btn" id="Submit">Submit!</button>
-        </form>
-    </div>
-    <br>
     
     </main>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
