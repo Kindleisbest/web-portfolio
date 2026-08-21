@@ -1,6 +1,19 @@
 // Skeleton Screen Implementation
 
 const skeletonCSS = `
+html {
+  overflow: hidden;
+  overscroll-behavior: none;
+  scrollbar-gutter: stable;
+  touch-action: none;
+}
+
+body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
 #loader {
   position: fixed;
   top: 105px;
